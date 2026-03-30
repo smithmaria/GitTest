@@ -29,5 +29,11 @@ namespace GitTest.Controllers
             })
             .ToArray();
         }
+
+        [HttpGet("name")]
+        public IActionResult GetName()
+        {
+            return Ok(new { name = "Maria" });
+        }
     }
 }
